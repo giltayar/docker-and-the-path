@@ -1,0 +1,1 @@
+ docker run -d -p 7017:27017 mymongo
