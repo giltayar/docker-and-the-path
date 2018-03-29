@@ -1,0 +1,11 @@
+version: '3'
+services:
+  mongo:
+    image: mymongo
+  blog:
+    image: myblog
+    environment:
+      SECRET: shhh
+      MONGODB_URI: mongo:27017
+    ports:
+      - "3000:3000"

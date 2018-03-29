@@ -12,10 +12,10 @@
 			"name": "02-blog-app"
 		},
 		{
-			"path": "blog-app-example"
+			"path": "03-docker-compose"
 		},
 		{
-			"path": "03-docker-compose"
+			"path": "blog-app-example"
 		}
 	],
 	"settings": {}
