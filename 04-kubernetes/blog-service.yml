@@ -1,0 +1,12 @@
+kind: Service
+apiVersion: v1
+metadata:
+  name: myblog-service
+spec:
+  selector:
+    app: myblog
+  ports:
+  - protocol: TCP
+    targetPort: 3000
+    port: 80
+  type: NodePort

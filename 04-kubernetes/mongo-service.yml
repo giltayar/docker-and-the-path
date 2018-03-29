@@ -1,0 +1,11 @@
+kind: Service
+apiVersion: v1
+metadata:
+  name: mymongo-service
+spec:
+  selector:
+    app: mymongo
+  ports:
+  - protocol: TCP
+    targetPort: 27107
+    port: 27107

@@ -1,0 +1,24 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: myblog
+spec:
+  selector:
+    matchLabels:
+      app: myblog
+  replicas: 1
+  template:
+    metadata:
+      labels:
+        app: myblog
+    spec:
+      containers:
+      - name: myblog
+        image: giltayar/myblog
+        ports:
+        - containerPort: 3000
+        env:
+          - name: MONGODB_URI
+            value: 'mymongo-service:27107'
+          - name: SECRET
+            value: 'shhhhhh'
