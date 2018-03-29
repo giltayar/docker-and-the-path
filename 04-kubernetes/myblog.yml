@@ -19,6 +19,6 @@ spec:
         - containerPort: 3000
         env:
           - name: MONGODB_URI
-            value: 'mymongo-service:27107'
+            value: 'mymongo-service:27017'
           - name: SECRET
             value: 'shhhhhh'
