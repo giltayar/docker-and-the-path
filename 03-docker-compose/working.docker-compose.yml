@@ -2,6 +2,7 @@ version: '3'
 services:
   mongo:
     image: mymongo
+
   blog:
     image: myblog
     environment:
