@@ -12,7 +12,7 @@
     "dev": "nodemon ./src/app.js",
     "test": "docker-compose kill && docker-compose rm -fsv && docker-compose up -d && npm run test:mocha && docker-compose kill && docker-compose rm -fv",
     "build": "npm run build:frontend && npm run build:backend",
-    "build:backend": "docker build . -t giltayar/blog-example",
+    "build:backend": "docker build . -t giltayar/blog-app-example",
     "build:frontend": "cd frontend && npm run build"
   },
   "repository": {
@@ -25,6 +25,7 @@
     "cors": "2.7.1",
     "ejs": "2.4.1",
     "errorhandler": "1.4.3",
+    "eslint": "^4.19.1",
     "express": "4.13.4",
     "express-jwt": "3.3.0",
     "express-session": "1.13.0",
@@ -41,6 +42,9 @@
     "underscore": "1.8.3"
   },
   "devDependencies": {
+    "eslint-plugin-mocha": "^5.0.0",
+    "eslint-plugin-node": "^6.0.1",
+    "eslint-plugin-prettier": "^2.6.0",
     "newman": "^3.8.2",
     "nodemon": "^1.11.0"
   }
