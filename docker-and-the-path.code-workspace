@@ -4,10 +4,18 @@
 			"path": "."
 		},
 		{
-			"path": "01-mongo"
+			"path": "01-mongo",
+			"name": "01-mongo"
+		},
+		{
+			"path": "02-blog-app",
+			"name": "02-blog-app"
 		},
 		{
 			"path": "blog-app-example"
+		},
+		{
+			"path": "03-docker-compose"
 		}
 	],
 	"settings": {}
