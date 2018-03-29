@@ -1,1 +1,0 @@
-kubectl config use-context minikube
