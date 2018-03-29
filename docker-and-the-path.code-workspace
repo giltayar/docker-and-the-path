@@ -4,10 +4,10 @@
 			"path": "."
 		},
 		{
-			"path": "monolith-example"
+			"path": "01-mongo"
 		},
 		{
-			"path": "01-mongo"
+			"path": "blog-app-example"
 		}
 	],
 	"settings": {}

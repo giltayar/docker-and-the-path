@@ -12,7 +12,7 @@
     "dev": "nodemon ./src/app.js",
     "test": "docker-compose kill && docker-compose rm -fsv && docker-compose up -d && npm run test:mocha && docker-compose kill && docker-compose rm -fv",
     "build": "npm run build:frontend && npm run build:backend",
-    "build:backend": "docker build . -t giltayar/realworld-frontend-testing",
+    "build:backend": "docker build . -t giltayar/blog-example",
     "build:frontend": "cd frontend && npm run build"
   },
   "repository": {
