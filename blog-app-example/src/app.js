@@ -88,4 +88,5 @@ var server = app.listen(process.env.PORT || 3000, function() {
   console.log('Listening on port ' + server.address().port)
 })
 
-process.on('SIGINT', () => console.log('exiting...') || process.exit(0))
+process.on('SIGINT', () => {console.log('exiting...'); process.exit(0)})
+process.on('SIGTERM', () => {console.log('exiting...'); process.exit(0)})
