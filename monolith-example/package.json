@@ -1,0 +1,47 @@
+{
+  "name": "giltayar-realworld-frontend-testing",
+  "version": "1.0.0",
+  "description": "conduit on node",
+  "main": "app.js",
+  "engines": {
+    "node": ">=8.0.0"
+  },
+  "scripts": {
+    "start": "docker-compose up",
+    "postinstall": "cd frontend && npm install",
+    "dev": "nodemon ./src/app.js",
+    "test": "docker-compose kill && docker-compose rm -fsv && docker-compose up -d && npm run test:mocha && docker-compose kill && docker-compose rm -fv",
+    "build": "npm run build:frontend && npm run build:backend",
+    "build:backend": "docker build . -t giltayar/realworld-frontend-testing",
+    "build:frontend": "cd frontend && npm run build"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/gothinkster/productionready-node-api.git"
+  },
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "1.15.0",
+    "cors": "2.7.1",
+    "ejs": "2.4.1",
+    "errorhandler": "1.4.3",
+    "express": "4.13.4",
+    "express-jwt": "3.3.0",
+    "express-session": "1.13.0",
+    "jsonwebtoken": "7.1.9",
+    "method-override": "2.3.5",
+    "methods": "1.1.2",
+    "mongoose": "4.4.10",
+    "mongoose-unique-validator": "1.0.2",
+    "morgan": "1.7.0",
+    "passport": "0.3.2",
+    "passport-local": "1.0.0",
+    "request": "2.69.0",
+    "slug": "0.9.1",
+    "underscore": "1.8.3"
+  },
+  "devDependencies": {
+    "newman": "^3.8.2",
+    "nodemon": "^1.11.0"
+  }
+}

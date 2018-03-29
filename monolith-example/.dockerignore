@@ -1,0 +1,6 @@
+.vscode
+frontend
+!frontend/build
+live-coding
+node_modules
+test
