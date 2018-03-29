@@ -1,6 +1,3 @@
-docker rm -fv `docker ps -a -q`
-docker network prune -f
-
 docker network create mynet
 
 docker run -d --network=mynet --name=mongo mymongo
