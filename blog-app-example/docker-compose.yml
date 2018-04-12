@@ -1,13 +1,15 @@
 version: '3'
 services:
   backend:
-    image: giltayar/realworld-frontend-testing
+    image: giltayar/blog-app-example
     environment:
-      PORT: 80
+      PORT: 3000
       MONGODB_URI: db:27017
       SECRET: "shhhh"
     depends_on:
         - db
+    ports:
+      - "3000:3000"
 
   db:
     image: mongo:3.4
