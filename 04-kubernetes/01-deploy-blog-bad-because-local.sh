@@ -1,1 +1,1 @@
-kubectl apply -f myblog-bad-because-local.yml
+kubectl apply -f myblog-1.yml
