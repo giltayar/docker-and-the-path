@@ -1,9 +1,6 @@
 {
 	"folders": [
 		{
-			"path": "."
-		},
-		{
 			"path": "01-mongo",
 			"name": "01-mongo"
 		},

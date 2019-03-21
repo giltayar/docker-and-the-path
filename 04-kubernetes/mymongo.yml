@@ -15,5 +15,6 @@ spec:
       containers:
       - name: mymongo
         image: giltayar/mymongo
+        imagePullPolicy: IfNotPresent
         ports:
         - containerPort: 27017
