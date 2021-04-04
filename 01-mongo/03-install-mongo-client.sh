@@ -1,3 +1,4 @@
 if ! which mongo; then
-  brew install mongodb
+  brew tap mongodb/brew
+  brew install mongodb-community
 fi
